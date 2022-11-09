@@ -1,0 +1,21 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/emp_personal.Employee_personal-Employee_personal.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_personal.Employee_personal_Details-Employee_personal_Details.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/emp_personal.Insert_employeePersonal_Details-Insert_employeePersonal_Details.json",
+            "type": "generated"
+        }
+    ]
+}

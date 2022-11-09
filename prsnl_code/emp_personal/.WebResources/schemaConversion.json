@@ -1,0 +1,24 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/emp_personal/Service Descriptors/emp_personal.Employee_personal-Employee_personal.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    },
+    {
+        "jsonSchemaLocation": "/emp_personal/Service Descriptors/emp_personal.Employee_personal_Details-Employee_personal_Details.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    },
+    {
+        "jsonSchemaLocation": "/emp_personal/Service Descriptors/emp_personal.Insert_employeePersonal_Details-Insert_employeePersonal_Details.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/Common/Schemas/emp_personal.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    },
+    {
+        "jsonSchemaLocation": "/emp_personal/Service Descriptors/emp_personal.Insert_employeePersonal_Details-Insert_employeePersonal_Details.json",
+        "conversionType": "linked",
+        "xsdSchemaLocation": "/Common/Schemas/emp_personal.xsd",
+        "xsdSchemaTargetNamespace": "http://www.example.org/emp_personal"
+    }
+]}

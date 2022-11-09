@@ -1,0 +1,92 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Employee_personal_Details",
+    "description" : "Employee_personal_Details service"
+  },
+  "host" : "localhost:8023",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/Insert_employee_personal" : {
+      "post" : {
+        "summary" : "postEmployee_personal_Details",
+        "description" : "postEmployee_personal_Details",
+        "operationId" : "post-Insert_employee_personal",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/employeeprsnlReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a employeeprsnlResp to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/employeeprsnlResp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "prsnldata" : {
+      "type" : "object",
+      "required" : [ "empid", "Resposemsg" ],
+      "properties" : {
+        "empid" : {
+          "type" : "string"
+        },
+        "empname" : {
+          "type" : "string"
+        },
+        "age" : {
+          "type" : "string"
+        },
+        "address" : {
+          "type" : "string"
+        },
+        "date_of_birth" : {
+          "type" : "string"
+        },
+        "phonenumber" : {
+          "type" : "string"
+        },
+        "Resposemsg" : {
+          "type" : "string"
+        }
+      }
+    },
+    "employeeprsnlReq" : {
+      "type" : "object",
+      "properties" : {
+        "prsnldata" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/prsnldata",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "employeeprsnlResp" : {
+      "type" : "object",
+      "properties" : {
+        "prsnldata" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/prsnldata",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Insert_employeePersonal_Details",
+    "description" : "Insert_employeePersonal_Details service"
+  },
+  "host" : "localhost:8023",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/insert_employeepersonal_details" : {
+      "post" : {
+        "summary" : "postInsert_employeePersonal_Details",
+        "description" : "postInsert_employeePersonal_Details",
+        "operationId" : "post-insert_employeepersonal_details",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/employeeprsnlReq"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a EmployeeDetailsResp to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/EmployeeDetailsResp"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "prsnldata" : {
+      "type" : "object",
+      "required" : [ "empid" ],
+      "properties" : {
+        "empid" : {
+          "type" : "string"
+        },
+        "empname" : {
+          "type" : "string"
+        },
+        "age" : {
+          "type" : "string"
+        },
+        "address" : {
+          "type" : "string"
+        },
+        "date_of_birth" : {
+          "type" : "string"
+        },
+        "phonenumber" : {
+          "type" : "string"
+        }
+      }
+    },
+    "EmployeeDetailsResp" : {
+      "type" : "object",
+      "required" : [ "Payload" ],
+      "properties" : {
+        "Payload" : {
+          "type" : "string"
+        }
+      }
+    },
+    "employeeprsnlReq" : {
+      "type" : "object",
+      "properties" : {
+        "prsnldata" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/prsnldata",
+            "uniqueItems" : false
+          }
+        }
+      }
+    }
+  }
+}
