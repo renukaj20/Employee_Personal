@@ -41,7 +41,7 @@
     <failIfNoTests>false</failIfNoTests>
     <truststorePath></truststorePath>
     <keystorePath></keystorePath>
-    <domain>Employeepoc-domain</domain>
+    <domain>Employee_poc-domain</domain>
     <agentPort>8079</agentPort>
     <tibco.Home>C:\BW6_Home</tibco.Home>
   </properties>
