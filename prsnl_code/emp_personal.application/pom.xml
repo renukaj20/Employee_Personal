@@ -34,7 +34,7 @@
     <domainDesc></domainDesc>
     <keystorePassword></keystorePassword>
     <bw.Home>\bw\6.8</bw.Home>
-    <httpPort>8374</httpPort>
+    <httpPort>8367</httpPort>
     <profile></profile>
     <restartAppNode>false</restartAppNode>
     <appNode>emppersonal-AppNode</appNode>
