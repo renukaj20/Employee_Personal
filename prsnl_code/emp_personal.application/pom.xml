@@ -28,7 +28,7 @@
     <osgiPort></osgiPort>
     <redeploy>false</redeploy>
     <skipTests>false</skipTests>
-    <agentHost>local</agentHost>
+    <agentHost>localhost</agentHost>
     <agentAuth></agentAuth>
     <project.type>AppSpace</project.type>
     <domainDesc></domainDesc>
